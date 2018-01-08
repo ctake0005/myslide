@@ -4,7 +4,7 @@
 
 ---
 ## About me
-<img src="/assets/images/twitter.png" width="60">
+<img src="assets/images/twitter.png" width="60">
 - @ctake0005
 
 ---
@@ -40,7 +40,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ## Problem
 - setPosition() で指定した位置のストリートビューの屋外/屋内がわからない(指定もできない)
     - https://issuetracker.google.com/issues/35824536
-<img src="/images/issue.png" width="600">
+<img src="street-view-avoid-indoor/images/issue.png" width="600">
 
 ---
 ## My Solution
