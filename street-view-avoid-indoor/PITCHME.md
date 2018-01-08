@@ -4,7 +4,7 @@
 
 ---
 ## About me
-<img src="assets/images/twitter.png" width="60">
+<img src="../assets/images/twitter.png" width="60">
 - @ctake0005
 
 ---
@@ -33,14 +33,14 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ```
 @[1-5](StreetViewPanoramaFragment をレイアウトに追加)
 @[7-10](OnStreetViewPanoramaReadyCallback インターフェースを実装)
-@[12-15](インスタンス化し getStreetViewPanoramaAsync() で、コールバックを設定)
+@[12-15](getStreetViewPanoramaAsync() で、コールバックを設定)
 @[17-20](準備のできた StreetViewPanorama に対し、setPosition() を呼ぶ)
 
 ---
 ## Problem
 - setPosition() で指定した位置のストリートビューの屋外/屋内がわからない(指定もできない)
     - https://issuetracker.google.com/issues/35824536
-<img src="assets/images/issue.png" width="600">
+<img src="images/issue.png" width="600">
 
 ---
 ## My Solution
@@ -58,4 +58,4 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
 - Roads API の nearestRoads を使用することで簡易的に ***極力*** 屋外のストリートビューを表示することは可能
-- もっと良い方法を知っている方がいたら教えてください 🙏
+- よりうまい方法を知っている方がいたら教えて欲しいです 🙏
