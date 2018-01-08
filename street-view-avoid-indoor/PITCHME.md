@@ -4,43 +4,59 @@
 
 ---
 ## About me
-<img src="assets/images/twitter.png" width="60">
+<img src="/assets/images/twitter.png" width="60">
 - @ctake0005
 
 ---
-## How to use StreetView API
-```
+## How to use StreetView API (1)
+```xml
+- StreetViewPanoramaFragment をレイアウトに追加
+
 <fragment
     android:name="c.g.a.gms.maps.StreetViewPanoramaFragment"
     android:id="@+id/streetviewpanorama"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
+```
 
+---
+## How to use StreetView API (2)
+- OnStreetViewPanoramaReadyCallback インターフェースを実装
+
+```
 public class MainActivity extends FragmentActivity
     implements OnStreetViewPanoramaReadyCallback {
     ...
 }
+```
 
+- getStreetViewPanoramaAsync() で、コールバックを設定
+
+```
 StreetViewPanoramaFragment streetViewPanoramaFragment =
     (StreetViewPanoramaFragment) getFragmentManager()
         .findFragmentById(R.id.streetviewpanorama);
 streetViewPanoramaFragment.getStreetViewPanoramaAsync(this);
+```
 
+---
+## How to use StreetView API (3)
+- 準備ができたら onStreetViewPanoramaReady(StreetViewPanorama) がコールバックされるので、StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
+
+```
 @Override
 public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
     panorama.setPosition(new LatLng(-33.87365, 151.20689));
 }
 ```
-@[1-5](StreetViewPanoramaFragment をレイアウトに追加)
-@[7-10](OnStreetViewPanoramaReadyCallback インターフェースを実装)
-@[12-15](インスタンス化し getStreetViewPanoramaAsync() で、コールバックを設定)
-@[17-20](準備のできた StreetViewPanorama に対し、setPosition() を呼ぶ)
+
+→ 簡単 😃
 
 ---
 ## Problem
 - setPosition() で指定した位置のストリートビューの屋外/屋内がわからない(指定もできない)
     - https://issuetracker.google.com/issues/35824536
-<img src="assets/images/issue.png" width="600">
+<img src="/street-view-avoid-indoor/images/issue.png" width="600">
 
 ---
 ## My Solution
@@ -58,4 +74,4 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
 - Roads API の nearestRoads を使用することで簡易的に ***極力*** 屋外のストリートビューを表示することは可能
-- もっと良い方法を知っている方がいたら教えてください 🙏
+- よりうまい方法を知っている方がいたら教えて欲しいです 🙏

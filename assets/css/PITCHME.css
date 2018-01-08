@@ -9,3 +9,16 @@
   border: 0;
   box-shadow: none;
 }
+
+.reveal pre {
+  width: 100%;
+  box-shadow : none;
+}
+
+.reveal pre code {
+  font-size: 1.2em;
+  line-height: 1.2;
+  max-height: 75vh !important;
+  opacity: 0.95;
+  border-radius: 10px;
+}
