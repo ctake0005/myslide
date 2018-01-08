@@ -8,6 +8,11 @@
 - @ctake0005
 
 ---
+## What I want to do
+- （駅まで歩く人のために） Google Map で指し示した駅の外観（可能であれば出入り口）を表示したい！
+<img src="/street-view-avoid-indoor/images/spec-image.png" width="800">
+
+---
 ## How to use StreetView API (1)
 ```xml
 - StreetViewPanoramaFragment をレイアウトに追加
@@ -65,7 +70,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 
 ---
 ## But...
-- 付近（詳細半径不明）に道路がない場合は、位置が返却されない
+- 付近に道路がない場合は、位置が返却されない
     - ターミナル駅などでは、検索対象半径に道路が入らないことがある
 - 道路と地下鉄構内などが重なっている場合、道路上の座標を指定しても屋内Viewになってしまうことがある
 - 従量課金API (2500 req/day)
@@ -73,5 +78,5 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
-- Roads API の nearestRoads を使用することで簡易的に ***極力*** 屋外のストリートビューを表示することは可能
+- Roads API の nearestRoads を使用することで簡易的に **なるべく** 屋外のストリートビューになるようにすることは可能
 - よりうまい方法を知っている方がいたら教えて欲しいです 🙏
