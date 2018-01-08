@@ -8,19 +8,27 @@
 - @ctake0005
 
 ---
-## How to use StreetView API
+## How to use StreetView API (1)
+1. StreetViewPanoramaFragment をレイアウトに追加
 ```
 <fragment
     android:name="c.g.a.gms.maps.StreetViewPanoramaFragment"
     android:id="@+id/streetviewpanorama"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
+```
 
+---
+## How to use StreetView API (2)
+2. OnStreetViewPanoramaReadyCallback インターフェースを実装
+```
 public class MainActivity extends FragmentActivity
     implements OnStreetViewPanoramaReadyCallback {
     ...
 }
+```
 
+---
 StreetViewPanoramaFragment streetViewPanoramaFragment =
     (StreetViewPanoramaFragment) getFragmentManager()
         .findFragmentById(R.id.streetviewpanorama);
