@@ -10,13 +10,13 @@
 ---
 ## What I want to do
 - （駅まで歩く人のために） Google Map で指し示した駅の外観（可能であれば出入り口）を表示したい！
-<img src="/street-view-avoid-indoor/images/spec-image.png" width="800">
+<img src="/street-view-avoid-indoor/images/spec-image.png" width="600">
 
 ---
 ## How to use StreetView API (1)
-```xml
 - StreetViewPanoramaFragment をレイアウトに追加
 
+```xml
 <fragment
     android:name="c.g.a.gms.maps.StreetViewPanoramaFragment"
     android:id="@+id/streetviewpanorama"
