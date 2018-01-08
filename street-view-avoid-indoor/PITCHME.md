@@ -9,7 +9,7 @@
 
 ---
 ## What I want to do
-- （駅まで歩く人のために） Google Map で指し示した駅の外観（可能であれば出入り口）を表示したい！
+- Google Map で示した駅の外観（可能であれば出入り口）をストリートビューで見たい！
 <img src="/street-view-avoid-indoor/images/spec-image.png" width="600">
 
 ---
