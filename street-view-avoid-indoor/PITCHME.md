@@ -9,7 +9,6 @@
 
 ---
 ## How to use StreetView API (1)
-- StreetViewPanoramaFragment をレイアウトに追加
 ```xml
 <fragment
     android:name="c.g.a.gms.maps.StreetViewPanoramaFragment"
@@ -17,33 +16,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
 ```
+- StreetViewPanoramaFragment をレイアウトに追加
 
 ---
 ## How to use StreetView API (2)
-- OnStreetViewPanoramaReadyCallback インターフェースを実装
-- getStreetViewPanoramaAsync() で、コールバックを設定
 ```
 public class MainActivity extends FragmentActivity
     implements OnStreetViewPanoramaReadyCallback {
     ...
 }
 ```
+- OnStreetViewPanoramaReadyCallback インターフェースを実装
 ```
 StreetViewPanoramaFragment streetViewPanoramaFragment =
     (StreetViewPanoramaFragment) getFragmentManager()
         .findFragmentById(R.id.streetviewpanorama);
 streetViewPanoramaFragment.getStreetViewPanoramaAsync(this);
 ```
+- getStreetViewPanoramaAsync() で、コールバックを設定
 
 ---
 ## How to use StreetView API (3)
-- 準備ができたら onStreetViewPanoramaReady(StreetViewPanorama) がコールバックされるので、準備のできた StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
 ```
 @Override
 public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
     panorama.setPosition(new LatLng(-33.87365, 151.20689));
 }
 ```
+- 準備ができたら onStreetViewPanoramaReady(StreetViewPanorama) がコールバックされるので、StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
+
+→ 簡単 😃
 
 ---
 ## Problem
