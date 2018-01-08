@@ -4,7 +4,7 @@
 
 ---
 ## About me
-<img src="../assets/images/twitter.png" width="60">
+<img src="https://github.com/ctake0005/slide/assets/images/twitter.png" width="60">
 - @ctake0005
 
 ---
