@@ -9,7 +9,7 @@
 
 ---
 ## How to use StreetView API (1)
-StreetViewPanoramaFragment をレイアウトに追加
+- StreetViewPanoramaFragment をレイアウトに追加
 ```xml
 <fragment
     android:name="c.g.a.gms.maps.StreetViewPanoramaFragment"
@@ -20,13 +20,15 @@ StreetViewPanoramaFragment をレイアウトに追加
 
 ---
 ## How to use StreetView API (2)
-OnStreetViewPanoramaReadyCallback インターフェースを実装し、getStreetViewPanoramaAsync() で、コールバックを設定
+- OnStreetViewPanoramaReadyCallback インターフェースを実装
+- getStreetViewPanoramaAsync() で、コールバックを設定
 ```
 public class MainActivity extends FragmentActivity
     implements OnStreetViewPanoramaReadyCallback {
     ...
 }
-
+```
+```
 StreetViewPanoramaFragment streetViewPanoramaFragment =
     (StreetViewPanoramaFragment) getFragmentManager()
         .findFragmentById(R.id.streetviewpanorama);
@@ -35,7 +37,7 @@ streetViewPanoramaFragment.getStreetViewPanoramaAsync(this);
 
 ---
 ## How to use StreetView API (3)
-onStreetViewPanoramaReady(StreetViewPanorama) コールバックメソッドを使用して、準備のできた StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
+- 準備ができたら onStreetViewPanoramaReady(StreetViewPanorama) がコールバックされるので、準備のできた StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
 ```
 @Override
 public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
