@@ -66,7 +66,9 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## My Solution
 - **Google Maps Roads API > nearestRoads**
+- https://developers.google.com/maps/documentation/roads/nearest?hl=ja
 - 指定座標から最も近い道路上の区間を返してくれるAPI
+    - 走行ログなどを作成する際に、位置情報のズレを道路上に補正するためなどに用意されている
 
 ---
 ## But...
