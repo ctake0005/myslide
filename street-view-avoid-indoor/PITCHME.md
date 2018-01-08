@@ -65,8 +65,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 
 ---
 ## My Solution
-- **Google Maps Roads API > nearestRoads**
-    - https://developers.google.com/maps/documentation/roads/nearest?hl=ja
+- **Google Maps Roads API > [nearestRoads](https://developers.google.com/maps/documentation/roads/nearest?hl=ja)**
 - 指定座標から最も近い道路上の区間を返してくれるAPI
     - 走行ログなどを作成する際に、位置情報のズレを道路上に補正するためなどに用意されている
 
@@ -80,5 +79,5 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
-- Roads API の nearestRoads を使用することで簡易的に **なるべく** 屋外のストリートビューになるようにすることは可能
-- よりうまい方法を知っている方がいたら教えて欲しいです 🙏
+- Roads API の nearestRoads を使用することで **極力** 屋外のストリートビューを表示するようにすることは可能
+- もっとうまい解決案をお持ちの方がいたら教えていただきたいです！ 🙏
