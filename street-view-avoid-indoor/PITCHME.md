@@ -40,7 +40,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ## Problem
 - setPosition() で指定した位置のストリートビューの屋外/屋内がわからない(指定もできない)
     - https://issuetracker.google.com/issues/35824536
-<img src="images/issue.png" width="600">
+<img src="/images/issue.png" width="600">
 
 ---
 ## My Solution
