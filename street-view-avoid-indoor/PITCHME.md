@@ -4,16 +4,16 @@
 
 ---
 ## About me
-<img src="/assets/images/twitter.png" width="60">
+<img src="/assets/images/twitter.png" width="80">
 - @ctake0005
-
+- NAVITIME JAPAN Co.,Ltd.
 ---
 ## What I want to do
 - Google Map 上に示した駅の外観（可能であれば出入り口）をストリートビューで見たい！
 <img src="/street-view-avoid-indoor/images/spec-image.png" width="600">
 
 ---
-## How to use StreetView API (1)
+## How to show StreetView (1)
 - StreetViewPanoramaFragment をレイアウトに追加
 
 ```xml
@@ -25,7 +25,7 @@
 ```
 
 ---
-## How to use StreetView API (2)
+## How to show StreetView (2)
 - OnStreetViewPanoramaReadyCallback インターフェースを実装
 
 ```
@@ -45,7 +45,7 @@ streetViewPanoramaFragment.getStreetViewPanoramaAsync(this);
 ```
 
 ---
-## How to use StreetView API (3)
+## How to show StreetView (3)
 - 準備ができたら onStreetViewPanoramaReady(StreetViewPanorama) がコールバックされるので、StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
 
 ```
@@ -66,7 +66,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Therefore
 - 駅構内や、駅ビル内店舗のインドアビューが表示されることが多々ある
-<img src="/street-view-avoid-indoor/images/before.png" width="600">
+[!before](/street-view-avoid-indoor/images/before.png)
 
 ---
 ## My Solution
