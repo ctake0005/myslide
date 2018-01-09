@@ -75,6 +75,34 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
     - 走行ログなどを作成する際に、位置情報のズレを道路上に補正するためなどに用意されている
 
 ---
+## How to use
+```
+https://roads.googleapis.com/v1/nearestRoads?points=35.5537222,139.6470025&key=[YOUR_API_KEY]
+```
+```
+{
+   "snappedPoints": [
+     {
+       "location": {
+         "latitude": 35.5536442408212,
+         "longitude": 139.64732338977774
+       },
+       "originalIndex": 0,
+       "placeId": "ChIJX0D9BXdfGGARlGVx6mI5TQA"
+     },
+     {
+       "location": {
+         "latitude": 35.5536442408212,
+         "longitude": 139.64732338977774
+       },
+       "originalIndex": 0,
+       "placeId": "ChIJX0D9BXdfGGARlWVx6mI5TQA"
+     }
+   ]
+}
+```
+
+---
 ## As a result
 - 最寄りの道路上の位置が取得できるため、駅の外観を見せることが可能になった 😁
 <img src="/street-view-avoid-indoor/images/after.png" width="600">
@@ -89,5 +117,5 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
-- Roads API の nearestRoads を使用することで、屋外を表示しやすくすることは可能
-- もっと確実な方法をご存知の方がいたら教えていただきたいです！ 🙏
+- Roads API の nearestRoads を使用することで、屋外が表示**されやすく**することは可能
+- （無料で）もっと確実な方法をご存知の方がいたら教えていただきたいです！ 🙏
