@@ -5,8 +5,9 @@
 ---
 ## About me
 <img src="/assets/images/twitter.png" width="80">
-- @ctake0005
+- chiharu TAKENAKA
 - NAVITIME JAPAN Co.,Ltd.
+
 ---
 ## What I want to do
 - Google Map 上に示した駅の外観（可能であれば出入り口）をストリートビューで見たい！
