@@ -99,7 +99,7 @@ https://roads.googleapis.com/v1/nearestRoads?
 ---
 ## As a result
 - 最寄りの道路上の位置が取得できるため、駅の外観を見せることが可能になった 😁
-<img src="/street-view-avoid-indoor/images/after.png" width="600">
+<img src="/street-view-avoid-indoor/images/spec-image.png" width="600">
 
 ---
 ## But...
