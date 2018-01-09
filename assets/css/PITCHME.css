@@ -11,12 +11,12 @@
 }
 
 .reveal pre {
-  width: 100%;
+  width: 95%;
   box-shadow : none;
 }
 
 .reveal pre code {
-  font-size: 1.2em;
+  font-size: 1.0em;
   line-height: 1.2;
   max-height: 75vh !important;
   opacity: 0.95;
