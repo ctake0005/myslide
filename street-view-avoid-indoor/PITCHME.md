@@ -67,7 +67,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Therefore
 - 駅構内や、駅ビル内店舗のインドアビューが表示されることが多々ある
-<img src="/street-view-avoid-indoor/images/before.png" width="500">
+<img src="/street-view-avoid-indoor/images/before.png" width="480">
 
 ---
 ## My Solution
@@ -99,7 +99,7 @@ https://roads.googleapis.com/v1/nearestRoads?
 ---
 ## As a result
 - 最寄りの道路上の位置が取得できるため、駅の外観を見せることが可能になった 😁
-<img src="/street-view-avoid-indoor/images/after.png" width="500">
+<img src="/street-view-avoid-indoor/images/after.png" width="480">
 
 ---
 ## But...
