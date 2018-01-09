@@ -66,7 +66,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Therefore
 - 駅構内や、駅ビル内店舗のインドアビューが表示されることが多々ある
-[!before](/street-view-avoid-indoor/images/before.png)
+![before](/street-view-avoid-indoor/images/before.png)
 
 ---
 ## My Solution
