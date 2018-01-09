@@ -5,7 +5,7 @@
 ---
 ## About me
 <img src="/assets/images/twitter.png" width="80">
-- chiharu TAKENAKA
+- Chiharu Takenaka
 - NAVITIME JAPAN Co.,Ltd.
 
 ---
