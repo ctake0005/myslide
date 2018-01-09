@@ -1,19 +1,3 @@
-## StreetView avoid indoor locations
-2018/01/11 shibuya.apk #21  
-@ctake0005
+# Slide
 
----
-## About me
-- @ctake0005
-
----
-## How to use StreetView API
-
----
-## Problem
-
----
-## Solution
-
----
-## But...
+using [GitPitch](https://github.com/gitpitch/gitpitch)
