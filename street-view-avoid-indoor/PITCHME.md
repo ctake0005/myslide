@@ -77,7 +77,8 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## How to use
 ```
-https://roads.googleapis.com/v1/nearestRoads?points=35.5537222,139.6470025&key=[YOUR_API_KEY]
+https://roads.googleapis.com/v1/nearestRoads?
+        points=35.5537222,139.6470025&key=[YOUR_API_KEY]
 ```
 ```
 {
@@ -89,14 +90,6 @@ https://roads.googleapis.com/v1/nearestRoads?points=35.5537222,139.6470025&key=[
        },
        "originalIndex": 0,
        "placeId": "ChIJX0D9BXdfGGARlGVx6mI5TQA"
-     },
-     {
-       "location": {
-         "latitude": 35.5536442408212,
-         "longitude": 139.64732338977774
-       },
-       "originalIndex": 0,
-       "placeId": "ChIJX0D9BXdfGGARlWVx6mI5TQA"
      }
    ]
 }
