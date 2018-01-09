@@ -9,7 +9,7 @@
 
 ---
 ## What I want to do
-- Google Map で示した駅の外観（可能であれば出入り口）をストリートビューで見たい！
+- Google Map 上に示した駅の外観（可能であれば出入り口）をストリートビューで見たい！
 <img src="/street-view-avoid-indoor/images/spec-image.png" width="600">
 
 ---
@@ -79,5 +79,5 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
-- Roads API の nearestRoads を使用することで **極力** 屋外のストリートビューを表示するようにすることは可能
-- もっとうまい解決案をお持ちの方がいたら教えていただきたいです！ 🙏
+- Roads API の nearestRoads を使用することで、屋外を表示しやすくすることは可能
+- もっと確実な方法をご存知の方がいたら教えていただきたいです！ 🙏
