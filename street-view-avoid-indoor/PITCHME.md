@@ -5,7 +5,7 @@
 ---
 ## About me
 <img src="/assets/images/twitter.png" width="80">
-- Chiharu Takenaka
+- Chiharu Takenaka  
 - NAVITIME JAPAN Co.,Ltd.
 
 ---
@@ -29,7 +29,7 @@
 ## How to show StreetView (2)
 - OnStreetViewPanoramaReadyCallback インターフェースを実装
 
-```
+```java
 public class MainActivity extends FragmentActivity
     implements OnStreetViewPanoramaReadyCallback {
     ...
@@ -38,7 +38,7 @@ public class MainActivity extends FragmentActivity
 
 - getStreetViewPanoramaAsync() で、コールバックを設定
 
-```
+```java
 StreetViewPanoramaFragment streetViewPanoramaFragment =
     (StreetViewPanoramaFragment) getFragmentManager()
         .findFragmentById(R.id.streetviewpanorama);
@@ -49,7 +49,7 @@ streetViewPanoramaFragment.getStreetViewPanoramaAsync(this);
 ## How to show StreetView (3)
 - 準備ができたら onStreetViewPanoramaReady(StreetViewPanorama) がコールバックされるので、StreetViewPanorama に対し、setPosition() を呼ぶとその位置のストリートビューが表示される
 
-```
+```java
 @Override
 public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
     panorama.setPosition(new LatLng(-33.87365, 151.20689));
@@ -60,8 +60,8 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 
 ---
 ## Problem
-- setPosition() で指定した位置のストリートビューの屋外/屋内がわからない(指定もできない)
-    - https://issuetracker.google.com/issues/35824536
+- setPosition() した位置のストリートビューの屋外/屋内がわからない & 指定もできない！
+    - https://issuetracker.google.com/issues/35824536
 <img src="/street-view-avoid-indoor/images/issue.png" width="600">
 
 ---
@@ -71,9 +71,12 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 
 ---
 ## My Solution
-- **Google Maps Roads API > [nearestRoads](https://developers.google.com/maps/documentation/roads/nearest?hl=ja)**
-- 指定座標から最も近い道路上の区間を返してくれるAPI
-    - 走行ログなどを作成する際に、位置情報のズレを道路上に補正するためなどに用意されている
+- **Google Maps Roads API > Nearest roads**
+- https://developers.google.com/maps/documentation/roads/nearest?hl=ja
+- 指定座標から最も近い道路上の区間を返してくれるAPI  
+    - 走行軌跡などを作成する際に、位置情報のズレを道路上に補正するために用意されている
+
+→ **駅から最も近い道路上の点を setPosition() すれば、いい感じに表示してくれるのでは？ :thinking_face:**
 
 ---
 ## How to use
@@ -106,10 +109,10 @@ https://roads.googleapis.com/v1/nearestRoads?
 - 付近に道路がない場合は、位置が返却されない
     - ターミナル駅などでは、検索対象半径に道路が入らないことがある
 - 道路と地下鉄構内などが重なっている場合、道路上の座標を指定しても屋内Viewになってしまうことがある
-- 従量課金API (2500 req/day)
+- 従量課金API (無料では 2500 req/day)
 
 ---
 ## Conclusion
 - アプリでストリートビューを表示することは簡単
-- Roads API の nearestRoads を使用することで、屋外が表示**されやすく**することは可能
+- Roads API の Nearest roads を使用することで、屋外が表示**されやすく**することは可能
 - （無料で）もっと確実な方法をご存知の方がいたら教えていただきたいです！ 🙏
