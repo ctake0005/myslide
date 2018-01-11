@@ -15,7 +15,7 @@
 
 ---
 ## How to show StreetView (1)
-- StreetViewPanoramaFragment をレイアウトに追加
+- StreetViewPanoramaFragment をレイアウトに追加（StreetViewPanoramaView もある）
 
 ```xml
 <fragment
