@@ -72,7 +72,6 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 ---
 ## My Solution
 - **Google Maps Roads API > Nearest roads**
-- <span style="font-size: 70%>https://developers.google.com/maps/documentation/roads/nearest?hl=ja</span>
 - 指定座標から最も近い道路上の区間を返してくれるAPI  
     - 走行軌跡を作成したり、走行していた道路を特定するために用意されているAPI
 
