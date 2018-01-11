@@ -74,7 +74,7 @@ public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 - **Google Maps Roads API > Nearest roads**
 - https://developers.google.com/maps/documentation/roads/nearest?hl=ja
 - 指定座標から最も近い道路上の区間を返してくれるAPI  
-    - 走行軌跡などを作成する際に、位置情報のズレを道路上に補正するために用意されている
+    - 走行軌跡を作成したり、走行していた道路を特定するために用意されているAPI
 
 → **駅から最も近い道路上の点を setPosition() すれば、いい感じに表示してくれるのでは？**
 
